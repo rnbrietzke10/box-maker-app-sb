@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Box from './Box';
 
 // Smoke Test
 test('renders App component witout crashing', () => {
-  render(<App />);
+  render(<Box />);
 });
 
 // Snapshot Test
 test('render matches snapshot', () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<Box />);
   expect(asFragment()).toMatchSnapshot();
 });
