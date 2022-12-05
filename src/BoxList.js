@@ -15,7 +15,7 @@ const BoxList = () => {
   };
 
   return (
-    <div>
+    <div className="boxList-container">
       <NewBoxForm addBoxToList={addBoxToList} />
       <div className="boxList">
         {boxes.map((box) => {
