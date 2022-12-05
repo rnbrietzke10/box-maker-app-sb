@@ -19,7 +19,6 @@ const NewBoxForm = ({ addBoxToList }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addBoxToList({ ...formData, id: uuidv4() });
-    console.log(formData);
     setFormData(INITIAL_STATE);
   };
 

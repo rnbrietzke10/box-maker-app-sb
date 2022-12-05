@@ -6,7 +6,6 @@ import NewBoxForm from './NewBoxForm';
 const BoxList = () => {
   const [boxes, setBoxes] = useState([]);
   const addBoxToList = ({ backgroundColor, width, height, id }) => {
-    console.log('ADDED');
     setBoxes((boxes) => [...boxes, { backgroundColor, width, height, id }]);
   };
 
